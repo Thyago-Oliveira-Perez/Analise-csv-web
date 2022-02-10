@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "t636Vu9v7uf8MCtjPsCLX0Y+Qm4f43eSpmXFZdwZN4Q=",
+  "Source": "SeriesTemporaisAPI",
+  "BasePath": "_content/SeriesTemporaisAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SeriesTemporaisAPI\\wwwroot",
+      "Source": "SeriesTemporaisAPI",
+      "ContentRoot": "C:\\Users\\Thp\\Desktop\\API_C#\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\wwwroot\\",
+      "BasePath": "_content/SeriesTemporaisAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Thp\\Desktop\\API_C#\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\wwwroot\\files\\arquivo",
+      "SourceId": "SeriesTemporaisAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Thp\\Desktop\\API_C#\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\wwwroot\\",
+      "BasePath": "_content/SeriesTemporaisAPI",
+      "RelativePath": "files/arquivo",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\arquivo"
+    }
+  ]
+}

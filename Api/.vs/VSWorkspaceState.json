@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\SeriesTemporaisAPI",
+    "\\SeriesTemporaisAPI\\SeriesTemporaisAPI",
+    "\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\Controllers",
+    "\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\wwwroot",
+    "\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\wwwroot\\files"
+  ],
+  "SelectedNode": "\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\Controllers\\DatasController.cs",
+  "PreviewInSolutionExplorer": false
+}
