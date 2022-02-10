@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "t636Vu9v7uf8MCtjPsCLX0Y+Qm4f43eSpmXFZdwZN4Q=",
+  "Hash": "DRYv5dljxawCXuJNcJ+STClSLyBlJ8qLoClJwHKOyNQ=",
   "Source": "SeriesTemporaisAPI",
   "BasePath": "_content/SeriesTemporaisAPI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "SeriesTemporaisAPI\\wwwroot",
       "Source": "SeriesTemporaisAPI",
-      "ContentRoot": "C:\\Users\\Thp\\Desktop\\API_C#\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Thp\\Desktop\\Analise-csv-web\\Api\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\wwwroot\\",
       "BasePath": "_content/SeriesTemporaisAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Thp\\Desktop\\API_C#\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\wwwroot\\files\\arquivo",
+      "Identity": "C:\\Users\\Thp\\Desktop\\Analise-csv-web\\Api\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\wwwroot\\files\\arquivo",
       "SourceId": "SeriesTemporaisAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Thp\\Desktop\\API_C#\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Thp\\Desktop\\Analise-csv-web\\Api\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\wwwroot\\",
       "BasePath": "_content/SeriesTemporaisAPI",
       "RelativePath": "files/arquivo",
       "AssetKind": "All",

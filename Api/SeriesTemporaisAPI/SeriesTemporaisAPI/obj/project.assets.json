@@ -5345,11 +5345,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Thp\\Desktop\\API_C#\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\SeriesTemporaisAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Thp\\Desktop\\Analise-csv-web\\Api\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\SeriesTemporaisAPI.csproj",
       "projectName": "SeriesTemporaisAPI",
-      "projectPath": "C:\\Users\\Thp\\Desktop\\API_C#\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\SeriesTemporaisAPI.csproj",
+      "projectPath": "C:\\Users\\Thp\\Desktop\\Analise-csv-web\\Api\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\SeriesTemporaisAPI.csproj",
       "packagesPath": "C:\\Users\\Thp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Thp\\Desktop\\API_C#\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\obj\\",
+      "outputPath": "C:\\Users\\Thp\\Desktop\\Analise-csv-web\\Api\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Thp\\AppData\\Roaming\\NuGet\\NuGet.Config",

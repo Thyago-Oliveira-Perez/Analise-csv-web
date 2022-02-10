@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vZY+nUo0m4VxxcC6suDDZ++Rq70Edgn8bA5L/xPQlfOqb7OOuPRxLS98Ha7/faPS46rInnabWWqKQvucl9fk+Q==",
+  "dgSpecHash": "ByKT7BCPZRmsgqKToeKdFMhzM1JfYMiUn7A+Mqn3yl2weoPcH45Z2TlyORD0uPYChycw1j4qUdC/XBFnBE+elg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Thp\\Desktop\\API_C#\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\SeriesTemporaisAPI.csproj",
+  "projectFilePath": "C:\\Users\\Thp\\Desktop\\Analise-csv-web\\Api\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\SeriesTemporaisAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Thp\\.nuget\\packages\\convertcsvtojson\\1.0.0\\convertcsvtojson.1.0.0.nupkg.sha512",
     "C:\\Users\\Thp\\.nuget\\packages\\microsoft.aspnet.webapi\\5.2.7\\microsoft.aspnet.webapi.5.2.7.nupkg.sha512",
