@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SeriesTemporaisAPI",
+    "\\SeriesTemporaisAPI\\wwwroot",
+    "\\SeriesTemporaisAPI\\wwwroot\\files"
   ],
-  "SelectedNode": "\\SeriesTemporaisAPI.sln",
+  "SelectedNode": "\\SeriesTemporaisAPI\\wwwroot\\files\\arquivo",
   "PreviewInSolutionExplorer": false
 }

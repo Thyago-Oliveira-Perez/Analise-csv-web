@@ -1,17 +1,28 @@
 import React from "react";
 import ReactEcharts from "echarts-for-react";
-import Api from './Api'
+import { useEffect, useState } from "react";
+import api from "./Services/Api"
 
 export default function Grafico() {
 
-  const data = Api();
+  const [data, setData] = useState([]);
 
-  function coletaChavesJsonFile(data){
+  useEffect(() => {
+    api
+      .get("/api/datas/get")
+      .then(response => { 
+          setData(response.data);
+        }).catch((err) => {
+        console.error("ops! ocorreu um erro " + err);
+      });
+  });
+
+  function coletaChavesJsonFile(dias){
     var chavesJson = [];
-    for (var i in data[0]) {
-      if (data[0][i] != null) {
-          chavesJson.push(i);
-      }
+    var aux;
+    for (var i in dias[0]) {
+      aux = i.split(" ");
+      chavesJson.push(aux[0]);
     }
     return chavesJson;
   }
