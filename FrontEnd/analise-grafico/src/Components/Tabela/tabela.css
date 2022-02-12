@@ -1,0 +1,21 @@
+*{
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.tabela{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 800px;
+    min-height: 300px;
+    margin-top: 80px;
+}
+
+.titulo{
+    margin-bottom: 20px;
+}

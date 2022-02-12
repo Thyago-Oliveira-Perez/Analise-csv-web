@@ -1,0 +1,34 @@
+*{
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button{
+    margin-top: 60px;
+    max-width: 150px;
+    background-color: #808080;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    font-size: 18px;
+}
+
+button:hover{
+    transition: all ease 0.2s;
+    background-color: #C0C0C0;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}

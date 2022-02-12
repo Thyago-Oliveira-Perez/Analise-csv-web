@@ -9,6 +9,7 @@
       "SeriesTemporaisAPI/1.0.0": {
         "dependencies": {
           "ConvertCsvToJson": "1.0.0",
+          "LumenWorksCsvReader": "4.0.0",
           "Microsoft.AspNet.WebApi": "5.2.7",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Microsoft.AspNetCore.Cors": "2.2.0",
@@ -27,6 +28,14 @@
           "lib/net5.0/ConvertCsvToJson.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "LumenWorksCsvReader/4.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/LumenWorks.Framework.IO.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
           }
         }
       },
@@ -871,6 +880,13 @@
       "sha512": "sha512-jHyiQzw0ksUsSzSRrQ8xOpKDdblSxhMuS1WvegVh2cNbDskd3TILjYtSqeZ+ExLQqh2DqHmIQPgBqKrwX+0Jnw==",
       "path": "convertcsvtojson/1.0.0",
       "hashPath": "convertcsvtojson.1.0.0.nupkg.sha512"
+    },
+    "LumenWorksCsvReader/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CP6bPmDbmV5yT7YwfGxN8Agrdj0nB82b2UitfrnTghqyfF4DXD4UXl8MoCXBz4Ja17bUYqpEDd+qaavh7lwUxg==",
+      "path": "lumenworkscsvreader/4.0.0",
+      "hashPath": "lumenworkscsvreader.4.0.0.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi/5.2.7": {
       "type": "package",

@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[1.0.0, )"
             },
+            "LumenWorksCsvReader": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
             "Microsoft.AspNet.WebApi": {
               "target": "Package",
               "version": "[5.2.7, )"

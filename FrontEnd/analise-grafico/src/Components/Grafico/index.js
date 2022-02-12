@@ -1,7 +1,8 @@
 import React from "react";
 import ReactEcharts from "echarts-for-react";
 import { useEffect, useState } from "react";
-import api from "./Services/Api"
+import api from "../../Services/Api"
+import "./grafico.css"
 
 export default function Grafico() {
 
@@ -9,20 +10,18 @@ export default function Grafico() {
 
   useEffect(() => {
     api
-      .get("/api/datas/get")
+      .get("/api/Datas/get")
       .then(response => { 
           setData(response.data);
         }).catch((err) => {
         console.error("ops! ocorreu um erro " + err);
       });
-  });
+  }, []);
 
   function coletaChavesJsonFile(dias){
     var chavesJson = [];
-    var aux;
     for (var i in dias[0]) {
-      aux = i.split(" ");
-      chavesJson.push(aux[0]);
+      chavesJson.push(i);
     }
     return chavesJson;
   }
@@ -43,13 +42,15 @@ export default function Grafico() {
     var i = 0;
     var value;
     var values = [];
-    for(i = 0; i < data.length; i++){  
+    for(i = 0; i < data.length; i++){
       value = data[i][chavesJson[c]];
       var aux0 = value.split(",")
       var aux1 = aux0[0] + "."+ aux0[1]; 
       value = aux1;
-      if(!values.includes(parseFloat(value))){
-        values.push(parseFloat(value));
+      if(!isNaN(value)){
+        if(!values.includes(parseFloat(value))){
+          values.push(parseFloat(value));
+        }
       }
     }
     return values;
@@ -93,8 +94,9 @@ export default function Grafico() {
   };
   
   return(
-    <>
+    <div className="tabela">
+      <h1>Analise Gráfica por Período</h1>
       <ReactEcharts option={option} />
-    </> 
+    </div> 
   );
 }

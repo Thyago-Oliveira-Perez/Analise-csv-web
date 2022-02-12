@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DRYv5dljxawCXuJNcJ+STClSLyBlJ8qLoClJwHKOyNQ=",
+  "Hash": "4ldhn2xn1LpQ0GiF/A/iaWt9rF5rYgqFwjC34gx1Ti8=",
   "Source": "SeriesTemporaisAPI",
   "BasePath": "_content/SeriesTemporaisAPI",
   "Mode": "Default",
@@ -15,23 +15,5 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [
-    {
-      "Identity": "C:\\Users\\Thp\\Desktop\\Analise-csv-web\\Api\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\wwwroot\\files\\arquivo",
-      "SourceId": "SeriesTemporaisAPI",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Thp\\Desktop\\Analise-csv-web\\Api\\SeriesTemporaisAPI\\SeriesTemporaisAPI\\wwwroot\\",
-      "BasePath": "_content/SeriesTemporaisAPI",
-      "RelativePath": "files/arquivo",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\arquivo"
-    }
-  ]
+  "Assets": []
 }

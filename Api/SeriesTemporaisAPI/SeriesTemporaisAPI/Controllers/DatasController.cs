@@ -46,32 +46,25 @@ namespace SeriesTemporaisAPI.Controllers
         }
 
         [HttpPost("post")]
-        public async Task<string> EnviaArquivo([FromForm] IFormFile arquivo)
+        public async Task<IActionResult> Post(IFormFile file)
         {
-            if (arquivo.Length > 0)
+            if (file != null && file.FileName.EndsWith(".csv"))
             {
-                try
+                if (!Directory.Exists(_environment.WebRootPath + "\\files\\"))
                 {
-                    if (!Directory.Exists(_environment.WebRootPath + "\\files\\"))
-                    {
-                        Directory.CreateDirectory(_environment.WebRootPath + "\\files\\");
-                    }
-                    using (FileStream filestream = System.IO.File.Create(_environment.WebRootPath + "\\files\\" + "arquivo"))
-                    {
-                        await arquivo.CopyToAsync(filestream);
-                        filestream.Flush();
-                        return "\\files\\" + arquivo.FileName;
-                    }
+                    Directory.CreateDirectory(_environment.WebRootPath + "\\files\\");
                 }
-                catch (Exception ex)
+                using (FileStream filestream = System.IO.File.Create(_environment.WebRootPath + "\\files\\" + "arquivo"))
                 {
-                    return ex.ToString();
+                await file.CopyToAsync(filestream);
+                filestream.Flush();
+                return Ok(file.FileName);
                 }
             }
-            else
-            {
-                return "Ocorreu uma falha no envio do arquivo...";
+            else {
+                return BadRequest();
             }
         }
     }
 }
+

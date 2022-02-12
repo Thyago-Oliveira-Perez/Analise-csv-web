@@ -1,12 +1,13 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import api from "./Services/Api"
+import api from "../../Services/Api"
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
+import "./tabela.css"
 
 export default function Tabela(){
 
@@ -14,22 +15,20 @@ export default function Tabela(){
 
     useEffect(() => {
       api
-        .get("/api/datas/get")
+        .get("/api/Datas/get")
         .then(response => { 
             setData(response.data);
           }).catch((err) => {
           console.error("ops! ocorreu um erro " + err);
         });
-    });
+    }, []);
 
     function coletaChavesJsonFile(dias){
-        var chavesJson = [];
-        var aux;
-        for (var i in dias[0]) {
-          aux = i.split(" ");
-          chavesJson.push(aux[0]);
-        }
-        return chavesJson;
+      var chavesJson = [];
+      for (var i in dias[0]) {
+        chavesJson.push(i);
+      }
+      return chavesJson;
     }
 
     function coletaValores(data, chavesJson, c) {
@@ -41,8 +40,10 @@ export default function Tabela(){
         var aux0 = value.split(",")
         var aux1 = aux0[0] + "."+ aux0[1]; 
         value = aux1;
-        if(!values.includes(parseFloat(value))){
-          values.push(parseFloat(value));
+        if(!isNaN(value)){
+          if(!values.includes(parseFloat(value))){
+            values.push(parseFloat(value));
+          }
         }
       }
       return values;
@@ -64,13 +65,14 @@ export default function Tabela(){
     ];
 
     return (
-        <TableContainer>
+        <TableContainer className="tabela">
+          <h1 className="titulo">Tabela de Valores</h1>
           <Table sx={{ maxWidth: 600 }}>
             <TableHead>
               <TableRow>
                 <TableCell>Serie</TableCell>
-                <TableCell align="center">Valor Máximo</TableCell>
-                <TableCell align="center">Valor Mínimo</TableCell>
+                <TableCell>Max Value</TableCell>
+                <TableCell>Min Value</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>

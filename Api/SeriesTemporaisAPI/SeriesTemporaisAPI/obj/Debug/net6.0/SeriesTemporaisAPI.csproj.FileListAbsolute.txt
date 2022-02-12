@@ -70,3 +70,4 @@ C:\Users\Thp\Desktop\Analise-csv-web\Api\SeriesTemporaisAPI\SeriesTemporaisAPI\o
 C:\Users\Thp\Desktop\Analise-csv-web\Api\SeriesTemporaisAPI\SeriesTemporaisAPI\obj\Debug\net6.0\ref\SeriesTemporaisAPI.dll
 C:\Users\Thp\Desktop\Analise-csv-web\Api\SeriesTemporaisAPI\SeriesTemporaisAPI\obj\Debug\net6.0\SeriesTemporaisAPI.pdb
 C:\Users\Thp\Desktop\Analise-csv-web\Api\SeriesTemporaisAPI\SeriesTemporaisAPI\obj\Debug\net6.0\SeriesTemporaisAPI.genruntimeconfig.cache
+C:\Users\Thp\Desktop\Analise-csv-web\Api\SeriesTemporaisAPI\SeriesTemporaisAPI\bin\Debug\net6.0\LumenWorks.Framework.IO.dll
