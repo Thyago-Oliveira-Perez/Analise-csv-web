@@ -29,18 +29,18 @@ export default function Home() {
       .catch(function (response) {
         console.log(response);
       });
+
+      analisePage();
+
   }
   
 
   return(
-    <div className="container">
-        <div>
-            <input type="file" accept=".csv" onChange={(e) => setArquivo(e.target.files[0])}></input>
-            <button type="button" onClick={enviarDados}>Send</button>
-        </div>
-        <div>
-            <button type="button" onClick={analisePage}>Back</button>
-        </div>
-    </div> 
+    <>
+      <div className="container">
+        <input type="file" accept=".csv" onChange={(e) => setArquivo(e.target.files[0])}></input>
+        <button type="button" onClick={enviarDados}>Send</button>
+      </div>
+    </> 
   );
 }

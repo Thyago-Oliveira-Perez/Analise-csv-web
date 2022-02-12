@@ -28,6 +28,15 @@ button:hover{
     background-color: #C0C0C0;
 }
 
+input[type="file"]{
+    margin-top: 80px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    width: 320px;
+}
+
 .link{
     text-decoration: none;
     color: black;
