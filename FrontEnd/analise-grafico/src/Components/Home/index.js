@@ -15,22 +15,29 @@ export default function Home() {
   function enviarDados() {
 
     var formData = new FormData();
-    formData.append("file", arquivo);
 
-    axios({
-      method: "post",
-      url: "https://localhost:44379/api/datas/post",
-      data: formData,
-      headers: { "Content-Type": "Content-Type: multipart/form-data" },
-    })
-      .then(function (response) {
-        console.log(response);
+    if(arquivo != null){
+      
+      formData.append("file", arquivo);
+
+      axios({
+        method: "post",
+        url: "https://localhost:44379/api/datas/post",
+        data: formData,
+        headers: { "Content-Type": "Content-Type: multipart/form-data" },
       })
-      .catch(function (response) {
-        console.log(response);
-      });
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (response) {
+          console.log(response);
+        });
+  
+        analisePage();
+    }else{
+      alert("Selecione um Arquivo!");
+    }
 
-      analisePage();
 
   }
   
